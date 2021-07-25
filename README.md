@@ -14,7 +14,7 @@ The data provided consisted of a training set (2,834 rows) and a validation set 
 ## Data Exploration
 Below is a distribution of the `target` variable, where the lower the target variable, the more difficult the passage was (more suitable for 12th graders).
 
-(https://miro.medium.com/max/352/1*k9YKLcoMBX7EcI9Cte6XFQ.png)
+![image](https://miro.medium.com/max/352/1*k9YKLcoMBX7EcI9Cte6XFQ.png)
 
 I also created frequency distributions along with the average word length, split by passage complexities. I found that as the passages became less difficult (had a higher target score), that the average word length decreased. This made sense to me intuitively, since I believed that, in general, longer words were harder to read. This [paper](https://journals.sagepub.com/doi/pdf/10.1080/10862967609547176#:~:text=These%20studies%20verify%20that%20rate,1974c%3B%20Coleman%2C%201971) confirmed my belief:
 <figure>
