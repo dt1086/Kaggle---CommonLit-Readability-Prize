@@ -5,14 +5,16 @@
 The goal of this competition was to rate the complexity of literary passages for grades 3–12. Because the target variable is continuous, as the result of a Bradley-Terry analysis (a statistics idea related to paired comparisons), this was a regression problem, as opposed to a clasification problem. For a simple and intuitive explanation on the Bradley-Terry analysis, please click [here](https://jamesmccaffrey.wordpress.com/2020/01/31/an-intuitive-explanation-of-the-bradley-terry-model/).
 
 ## Data Overview
-While there were concerns over the data provided, with one participant going as far to call the data "... completely worthless”, calling out the fact that a pairwise comparison is a poor choice for the data due to subjective differences and inconsistency (due to humans rating the passages), I ignored any data concerns for the sake of my learning. However, I want to note that there is a valid concern for the compeition host to consider: whichever model scored the best may have major biases/flaws due to the data it was trained on, resulting in unintended consequences.
+While there were concerns over the data provided, with one participant going as far to call the data "... completely worthless”, calling out the fact that a pairwise comparison is a poor choice for the data due to subjective differences and inconsistency (due to humans rating the passages), I ignored any data concerns for the sake of my learning. However, I want to note that there is a valid concern for the compeition host to consider: whichever model scored the best may have major biases/flaws due to the data it was trained on, resulting in unintended consequences. Please see below for just one example:
+
+![image](![image](https://i.imgur.com/VQJYRqA.png)
 
 The data provided consisted of a training set (2,834 rows) and a validation set (7 rows). 
 
 ## Data Exploration
 Below is a distribution of the `target` variable, where the lower the target variable, the more difficult the passage was (more suitable for 12th graders).
 
-![image](https://miro.medium.com/max/352/1*k9YKLcoMBX7EcI9Cte6XFQ.png)
+(https://miro.medium.com/max/352/1*k9YKLcoMBX7EcI9Cte6XFQ.png)
 
 I also created frequency distributions along with the average word length, split by passage complexities. I found that as the passages became less difficult (had a higher target score), that the average word length decreased. This made sense to me intuitively, since I believed that, in general, longer words were harder to read. This [paper](https://journals.sagepub.com/doi/pdf/10.1080/10862967609547176#:~:text=These%20studies%20verify%20that%20rate,1974c%3B%20Coleman%2C%201971) confirmed my belief:
 <figure>
